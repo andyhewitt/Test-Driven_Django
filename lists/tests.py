@@ -28,8 +28,8 @@ class HomePageTest(TestCase):
         self.assertEqual(Item.objects.count(), 0)
 
     def test_display_all_items(self):
-        Item.objects.create(text='itemey 1')
-        Item.objects.create(text='itemey 2')
+        Item.objects.create(text='Itemey 1')
+        Item.objects.create(text='Itemey 2')
 
         response = self.client.get('/')
 
